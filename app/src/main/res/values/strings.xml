@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HK Smart Companion</string>
     <string name="home_headline">Hong Kong Smart Mobility Companion</string>
-    <string name="home_subtitle">\t ——Your Hong Kong smart mobility companion</string>
+    <string name="home_subtitle">\t ——Your smart mobility companion</string>
     <string name="home_section_title">Tap to start</string>
     <string name="scene_emergency_title">Emergency Recommendation</string>
     <string name="scene_emergency_subtitle">Balance hospital waiting time and travel effort to find the fastest option.</string>

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">HK Smart Companion</string>
     <string name="home_headline">Hong Kong Smart Mobility Companion</string>
-    <string name="home_subtitle">A decision-focused Android app for emergency, parking, leisure, and commute assistance.</string>
-    <string name="home_section_title">Choose a decision scene</string>
+    <string name="home_subtitle">\t ——Your Hong Kong smart mobility companion</string>
+    <string name="home_section_title">Tap to start</string>
     <string name="scene_emergency_title">Emergency Recommendation</string>
     <string name="scene_emergency_subtitle">Balance hospital waiting time and travel effort to find the fastest option.</string>
     <string name="scene_parking_title">Parking Recommendation</string>
@@ -34,7 +34,7 @@
     <string name="status_message_official_fallback">Official source unavailable. Fell back to demo data.</string>
     <string name="status_message_official_empty">No current official recommendations are available right now.</string>
     <string name="status_message_official_empty_fallback">No current official recommendations were available. Fell back to demo data.</string>
-    <string name="hero_badge">Android Studio + Java</string>
+    <string name="hero_badge">Harbor Flow</string>
     <string name="location_permission_pending">Location access is still pending. Showing cached or fallback origin for now.</string>
     <string name="location_live_title">Current origin</string>
     <string name="location_filter_title">Decision filters</string>

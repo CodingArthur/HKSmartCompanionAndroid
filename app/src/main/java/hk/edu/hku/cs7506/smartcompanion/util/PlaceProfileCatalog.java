@@ -5,17 +5,34 @@ import java.util.Locale;
 import java.util.Map;
 
 public final class PlaceProfileCatalog {
-    private static final String HOSPITAL_HERO_PRIMARY =
-            "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80";
-    private static final String HOSPITAL_HERO_SECONDARY =
-            "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80";
+    private static final String QUEEN_MARY_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Queen_Mary_Hospital_25-11-2023.jpg/1200px-Queen_Mary_Hospital_25-11-2023.jpg";
+    private static final String QUEEN_ELIZABETH_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/HK_King%27s_Park_%E4%BC%8A%E5%88%A9%E6%B2%99%E4%BC%AF%E9%86%AB%E9%99%A2_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG/1200px-HK_King%27s_Park_%E4%BC%8A%E5%88%A9%E6%B2%99%E4%BC%AF%E9%86%AB%E9%99%A2_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG";
+    private static final String PRINCE_OF_WALES_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Prince_of_Wales_Hospital_Overview_201106.jpg/1200px-Prince_of_Wales_Hospital_Overview_201106.jpg";
+    private static final String PAMELA_YOUDE_EASTERN_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pamela_Youde_Nethersole_Eastern_Hospital_%28A%26E%29.JPG/1200px-Pamela_Youde_Nethersole_Eastern_Hospital_%28A%26E%29.JPG";
+    private static final String PRINCESS_MARGARET_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Princess_Margaret_Hospital_202101.jpg/1200px-Princess_Margaret_Hospital_202101.jpg";
+    private static final String NORTH_DISTRICT_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/North_District_Hospital_New_Acute_Block_-_February_2026.jpg/1200px-North_District_Hospital_New_Acute_Block_-_February_2026.jpg";
+    private static final String TSEUNG_KWAN_O_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tseung_Kwan_O_Hospital.jpg/1200px-Tseung_Kwan_O_Hospital.jpg";
+    private static final String TUEN_MUN_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tuen_Mun_Hospital_%28full_view%29.jpg/1200px-Tuen_Mun_Hospital_%28full_view%29.jpg";
+    private static final String UNITED_CHRISTIAN_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/United_Christian_Hospital_2021.jpg/1200px-United_Christian_Hospital_2021.jpg";
+    private static final String ST_JOHN_HOSPITAL_HERO =
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/St._John_Hospital%2C_Cheung_Chau_2026.jpg/1200px-St._John_Hospital%2C_Cheung_Chau_2026.jpg";
+
     private static final String PARKING_HERO_CENTRAL =
-            "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1200&q=80";
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG/1200px-HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG";
     private static final String PARKING_HERO_KAI_TAK =
-            "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80";
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kai_Tak_Cruise_Terminal_carpark_09-04-2016%281%29.jpg/1200px-Kai_Tak_Cruise_Terminal_carpark_09-04-2016%281%29.jpg";
     private static final String PARKING_HERO_DISTRICT =
-            "https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80";
-    private static final String UNSPLASH_ATTRIBUTION = "Hero image via Unsplash";
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/HK_Tsuen_Wan_Town_Hall_%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG/1200px-HK_Tsuen_Wan_Town_Hall_%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG";
+    private static final String WIKIMEDIA_ATTRIBUTION = "Hero image via Wikimedia Commons";
 
     private static final Map<String, PlaceProfile> HOSPITAL_PROFILES = createHospitalProfiles();
 
@@ -34,7 +51,8 @@ public final class PlaceProfileCatalog {
                     || loweredDistrict.contains("western")
                     || loweredDistrict.contains("wan chai")) {
                 heroImage = PARKING_HERO_CENTRAL;
-            } else if (loweredDistrict.contains("kowloon city")) {
+            } else if (loweredDistrict.contains("kowloon city")
+                    || loweredDistrict.contains("kai tak")) {
                 heroImage = PARKING_HERO_KAI_TAK;
             }
         }
@@ -44,7 +62,7 @@ public final class PlaceProfileCatalog {
                 "Public parking recommendation - " + safeDistrict,
                 detailsUrl,
                 heroImage,
-                UNSPLASH_ATTRIBUTION,
+                WIKIMEDIA_ATTRIBUTION,
                 addressLine,
                 contactPhone
         );
@@ -56,8 +74,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Hong Kong West",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100220&Lang=ENG",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                QUEEN_MARY_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "102 Pok Fu Lam Road, Pok Fu Lam, Hong Kong",
                 null
         ));
@@ -65,8 +83,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Kowloon Central",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100202&Lang=ENG",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                QUEEN_ELIZABETH_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "30 Gascoigne Road, Jordan, Kowloon",
                 null
         ));
@@ -74,8 +92,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - New Territories East",
                 "https://www3.ha.org.hk/pwh/en/",
-                HOSPITAL_HERO_SECONDARY,
-                UNSPLASH_ATTRIBUTION,
+                PRINCE_OF_WALES_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "30-32 Ngan Shing Street, Sha Tin, New Territories",
                 null
         ));
@@ -83,8 +101,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Hong Kong East",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100214&Lang=ENG",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                PAMELA_YOUDE_EASTERN_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "3 Lok Man Road, Chai Wan, Hong Kong",
                 null
         ));
@@ -92,8 +110,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Kowloon West",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100199&Lang=ENG",
-                HOSPITAL_HERO_SECONDARY,
-                UNSPLASH_ATTRIBUTION,
+                PRINCESS_MARGARET_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "2-10 Princess Margaret Hospital Road, Lai Chi Kok, Kowloon",
                 null
         ));
@@ -101,8 +119,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - North District",
                 "https://www3.ha.org.hk/ndh/en/",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                NORTH_DISTRICT_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "9 Po Kin Road, Sheung Shui, New Territories",
                 null
         ));
@@ -110,8 +128,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Tseung Kwan O",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100217&Lang=ENG",
-                HOSPITAL_HERO_SECONDARY,
-                UNSPLASH_ATTRIBUTION,
+                TSEUNG_KWAN_O_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "2 Po Ning Lane, Hang Hau, Tseung Kwan O",
                 null
         ));
@@ -119,8 +137,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Tuen Mun",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100216&Lang=ENG",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                TUEN_MUN_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "23 Tsing Chung Koon Road, Tuen Mun, New Territories",
                 null
         ));
@@ -128,8 +146,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Kwun Tong",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100212&Lang=ENG",
-                HOSPITAL_HERO_SECONDARY,
-                UNSPLASH_ATTRIBUTION,
+                UNITED_CHRISTIAN_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "130 Hip Wo Street, Kwun Tong, Kowloon",
                 null
         ));
@@ -137,8 +155,8 @@ public final class PlaceProfileCatalog {
                 "Emergency unit",
                 "Hospital Authority emergency unit - Cheung Chau",
                 "https://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100211&Lang=ENG",
-                HOSPITAL_HERO_PRIMARY,
-                UNSPLASH_ATTRIBUTION,
+                ST_JOHN_HOSPITAL_HERO,
+                WIKIMEDIA_ATTRIBUTION,
                 "Cheung Chau Hospital Road, Cheung Chau",
                 null
         ));

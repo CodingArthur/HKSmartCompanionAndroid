@@ -11,13 +11,6 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/transparent"
-            app:title="@string/app_name" />
-
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,16 +30,8 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_metric_chip"
                     android:text="@string/hero_badge"
+                    android:textAlignment="center"
                     android:textColor="@color/brand_primary"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/home_headline"
-                    android:textColor="@color/brand_text"
-                    android:textSize="28sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -55,15 +40,9 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/home_subtitle"
                     android:textColor="@color/brand_muted"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:text="@string/dashboard_hint"
-                    android:textColor="@color/brand_muted"
-                    android:textSize="14sp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -107,7 +86,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonRefreshLiveData"
                     style="@style/Widget.Material3.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                    android:layout_width="333dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="14dp"
                     android:text="@string/action_refresh_live_data" />
@@ -190,9 +169,8 @@
                 <TextView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:background="@drawable/bg_metric_chip"
+                    android:background="@drawable/emergency_rcmd"
                     android:gravity="center"
-                    android:text="ER"
                     android:textColor="@color/brand_primary"
                     android:textStyle="bold" />
 
@@ -239,9 +217,8 @@
                 <TextView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:background="@drawable/bg_metric_chip"
+                    android:background="@drawable/parking_rcmd"
                     android:gravity="center"
-                    android:text="P"
                     android:textColor="@color/brand_primary"
                     android:textStyle="bold" />
 
@@ -288,9 +265,8 @@
                 <TextView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:background="@drawable/bg_metric_chip"
+                    android:background="@drawable/leisure_rcmd"
                     android:gravity="center"
-                    android:text="GO"
                     android:textColor="@color/brand_primary"
                     android:textStyle="bold" />
 
@@ -337,9 +313,8 @@
                 <TextView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:background="@drawable/bg_metric_chip"
+                    android:background="@drawable/commute_assistant"
                     android:gravity="center"
-                    android:text="BUS"
                     android:textColor="@color/brand_primary"
                     android:textStyle="bold" />
 

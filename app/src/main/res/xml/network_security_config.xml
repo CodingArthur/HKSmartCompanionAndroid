@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">ha.org.hk</domain>
+        <domain includeSubdomains="true">api.data.gov.hk</domain>
+        <domain includeSubdomains="true">resource.data.one.gov.hk</domain>
+        <domain includeSubdomains="true">tourism.gov.hk</domain>
+        <domain includeSubdomains="true">data.weather.gov.hk</domain>
+        <domain includeSubdomains="true">dashboard.data.gov.hk</domain>
+    </domain-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">amap.com</domain>
+        <domain includeSubdomains="true">autonavi.com</domain>
+    </domain-config>
+</network-security-config>

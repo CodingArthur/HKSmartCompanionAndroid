@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <long name="last_lng" value="4637732101327950342" />
+    <string name="last_label">The University of Hong Kong fallback origin</string>
+    <boolean name="last_is_fallback" value="true" />
+    <string name="last_city">Hong Kong</string>
+    <string name="data_mode">AUTO</string>
+    <string name="last_source_label">Current location is outside Hong Kong, using The University of Hong Kong fallback origin</string>
+    <long name="last_lat" value="4626965324588172444" />
+    <string name="last_district">Central and Western</string>
+</map>

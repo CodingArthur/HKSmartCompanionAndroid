@@ -1,0 +1,81 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+import java.util.Properties
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { stream ->
+        localProperties.load(stream)
+    }
+}
+
+def amapProperties = new Properties()
+def amapPropertiesFile = rootProject.file("amap.properties")
+if (amapPropertiesFile.exists()) {
+    amapPropertiesFile.withInputStream { stream ->
+        amapProperties.load(stream)
+    }
+}
+
+def amapApiKey = (project.findProperty("AMAP_API_KEY")
+        ?: amapProperties.getProperty("AMAP_API_KEY")
+        ?: localProperties.getProperty("AMAP_API_KEY")
+        ?: System.getenv("AMAP_API_KEY")
+        ?: "").toString()
+
+def amapNaviVersion = "10.0.800_3dmap10.0.800"
+def patchedAmapSearchJar = file("libs/amap-search-9.7.1-patched.jar")
+
+android {
+    namespace 'hk.edu.hku.cs7506.smartcompanion'
+    compileSdk {
+        version = release(36)
+    }
+
+    defaultConfig {
+        applicationId "hk.edu.hku.cs7506.smartcompanion"
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                AMAP_API_KEY: amapApiKey
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.recyclerview
+    implementation libs.swiperefreshlayout
+    implementation libs.gson
+    implementation "com.github.bumptech.glide:glide:4.16.0"
+    implementation "com.amap.api:navi-3dmap:${amapNaviVersion}"
+    implementation files(patchedAmapSearchJar)
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

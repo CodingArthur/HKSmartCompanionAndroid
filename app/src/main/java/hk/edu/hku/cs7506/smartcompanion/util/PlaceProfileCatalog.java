@@ -6,33 +6,33 @@ import java.util.Map;
 
 public final class PlaceProfileCatalog {
     private static final String QUEEN_MARY_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Queen_Mary_Hospital_25-11-2023.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String QUEEN_ELIZABETH_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/HK_King%27s_Park_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String PRINCE_OF_WALES_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Prince_of_Wales_Hospital_Overview_201106.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String PAMELA_YOUDE_EASTERN_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Pamela_Youde_Nethersole_Eastern_Hospital_(A%26E).JPG";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String PRINCESS_MARGARET_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Princess_Margaret_Hospital_202101.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String NORTH_DISTRICT_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/North_District_Hospital.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String TSEUNG_KWAN_O_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Tseung_Kwan_O_Hospital.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String TUEN_MUN_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Tuen_Mun_Hospital_(full_view).jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String UNITED_CHRISTIAN_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/United_Christian_Hospital_2021.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
     private static final String ST_JOHN_HOSPITAL_HERO =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/St._John_Hospital,_Cheung_Chau.jpg";
+            "file:///android_res/drawable/emergency_rcmd.png";
 
     private static final String PARKING_HERO_CENTRAL =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG";
+            "file:///android_res/drawable/parking_rcmd.png";
     private static final String PARKING_HERO_KAI_TAK =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/Kai_Tak_Cruise_Terminal_carpark_09-04-2016(1).jpg";
+            "file:///android_res/drawable/parking_rcmd.png";
     private static final String PARKING_HERO_DISTRICT =
-            "https://commons.wikimedia.org/wiki/Special:FilePath/HK_Tsuen_Wan_Town_Hall_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG";
-    private static final String WIKIMEDIA_ATTRIBUTION = "Hero image via Wikimedia Commons";
+            "file:///android_res/drawable/parking_rcmd.png";
+    private static final String WIKIMEDIA_ATTRIBUTION = "Local bundled image";
 
     private static final Map<String, PlaceProfile> HOSPITAL_PROFILES = createHospitalProfiles();
 

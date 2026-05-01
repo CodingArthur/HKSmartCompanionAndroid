@@ -59,8 +59,9 @@ public class RecommendationAdapter extends RecyclerView.Adapter<RecommendationAd
             holder.imageHero.setImageDrawable(null);
         } else {
             holder.layoutHero.setVisibility(View.VISIBLE);
+            Object imageModel = resolveImageModel(holder.imageHero, item.getImageUrl());
             Glide.with(holder.imageHero)
-                    .load(item.getImageUrl())
+                    .load(imageModel)
                     .centerCrop()
                     .placeholder(R.drawable.bg_hero_panel)
                     .into(holder.imageHero);
@@ -96,6 +97,21 @@ public class RecommendationAdapter extends RecyclerView.Adapter<RecommendationAd
             imageHero = itemView.findViewById(R.id.imageHero);
             layoutHero = itemView.findViewById(R.id.layoutHero);
         }
+    }
+
+    private Object resolveImageModel(ImageView target, String imageUrl) {
+        if (imageUrl != null && imageUrl.startsWith("drawable://")) {
+            String resourceName = imageUrl.substring("drawable://".length());
+            int resourceId = target.getResources().getIdentifier(
+                    resourceName,
+                    "drawable",
+                    target.getContext().getPackageName()
+            );
+            if (resourceId != 0) {
+                return resourceId;
+            }
+        }
+        return imageUrl;
     }
 
     private void bindOptionalText(TextView view, String value) {

@@ -5,33 +5,37 @@ import java.util.Locale;
 import java.util.Map;
 
 public final class PlaceProfileCatalog {
+    private static String commonsImage(String filename) {
+        return "https://commons.wikimedia.org/wiki/Special:FilePath/" + filename;
+    }
+
     private static final String QUEEN_MARY_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Queen_Mary_Hospital_25-11-2023.jpg/1200px-Queen_Mary_Hospital_25-11-2023.jpg";
+            commonsImage("Queen_Mary_Hospital_25-11-2023.jpg");
     private static final String QUEEN_ELIZABETH_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/HK_King%27s_Park_%E4%BC%8A%E5%88%A9%E6%B2%99%E4%BC%AF%E9%86%AB%E9%99%A2_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG/1200px-HK_King%27s_Park_%E4%BC%8A%E5%88%A9%E6%B2%99%E4%BC%AF%E9%86%AB%E9%99%A2_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG";
+            commonsImage("HK_King%27s_Park_%E4%BC%8A%E5%88%A9%E6%B2%99%E4%BC%AF%E9%86%AB%E9%99%A2_Queen_Elizabeth_Hospital_outdoor_entrance_Jan-2014.JPG");
     private static final String PRINCE_OF_WALES_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Prince_of_Wales_Hospital_Overview_201106.jpg/1200px-Prince_of_Wales_Hospital_Overview_201106.jpg";
+            commonsImage("Prince_of_Wales_Hospital_Overview_201106.jpg");
     private static final String PAMELA_YOUDE_EASTERN_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pamela_Youde_Nethersole_Eastern_Hospital_%28A%26E%29.JPG/1200px-Pamela_Youde_Nethersole_Eastern_Hospital_%28A%26E%29.JPG";
+            commonsImage("Pamela_Youde_Nethersole_Eastern_Hospital_%28A%26E%29.JPG");
     private static final String PRINCESS_MARGARET_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Princess_Margaret_Hospital_202101.jpg/1200px-Princess_Margaret_Hospital_202101.jpg";
+            commonsImage("Princess_Margaret_Hospital_202101.jpg");
     private static final String NORTH_DISTRICT_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/North_District_Hospital_New_Acute_Block_-_February_2026.jpg/1200px-North_District_Hospital_New_Acute_Block_-_February_2026.jpg";
+            commonsImage("North_District_Hospital_New_Acute_Block_-_February_2026.jpg");
     private static final String TSEUNG_KWAN_O_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Tseung_Kwan_O_Hospital.jpg/1200px-Tseung_Kwan_O_Hospital.jpg";
+            commonsImage("Tseung_Kwan_O_Hospital.jpg");
     private static final String TUEN_MUN_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tuen_Mun_Hospital_%28full_view%29.jpg/1200px-Tuen_Mun_Hospital_%28full_view%29.jpg";
+            commonsImage("Tuen_Mun_Hospital_%28full_view%29.jpg");
     private static final String UNITED_CHRISTIAN_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/United_Christian_Hospital_2021.jpg/1200px-United_Christian_Hospital_2021.jpg";
+            commonsImage("United_Christian_Hospital_2021.jpg");
     private static final String ST_JOHN_HOSPITAL_HERO =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/St._John_Hospital%2C_Cheung_Chau_2026.jpg/1200px-St._John_Hospital%2C_Cheung_Chau_2026.jpg";
+            commonsImage("St._John_Hospital%2C_Cheung_Chau_2026.jpg");
 
     private static final String PARKING_HERO_CENTRAL =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG/1200px-HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG";
+            commonsImage("HK_Central_Edinburgh_Place_Star_Ferry_Carpark_Building_view_Jardine_House_facade_May-2012.JPG");
     private static final String PARKING_HERO_KAI_TAK =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Kai_Tak_Cruise_Terminal_carpark_09-04-2016%281%29.jpg/1200px-Kai_Tak_Cruise_Terminal_carpark_09-04-2016%281%29.jpg";
+            commonsImage("Kai_Tak_Cruise_Terminal_carpark_09-04-2016%281%29.jpg");
     private static final String PARKING_HERO_DISTRICT =
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/HK_Tsuen_Wan_Town_Hall_%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG/1200px-HK_Tsuen_Wan_Town_Hall_%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG";
+            commonsImage("HK_Tsuen_Wan_Town_Hall_%E8%8D%83%E7%81%A3%E5%A4%A7%E6%9C%83%E5%A0%82_outdoor_carpark_red_flagpoles_view_Vision_City_facade_May-2013.JPG");
     private static final String WIKIMEDIA_ATTRIBUTION = "Hero image via Wikimedia Commons";
 
     private static final Map<String, PlaceProfile> HOSPITAL_PROFILES = createHospitalProfiles();

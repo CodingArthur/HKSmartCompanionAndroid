@@ -84,8 +84,9 @@ public class PlaceDetailActivity extends AppCompatActivity {
             layoutHero.setVisibility(android.view.View.GONE);
         } else {
             layoutHero.setVisibility(android.view.View.VISIBLE);
+            Object imageModel = resolveImageModel(imageHero, item.getImageUrl());
             Glide.with(imageHero)
-                    .load(item.getImageUrl())
+                    .load(imageModel)
                     .centerCrop()
                     .placeholder(R.drawable.bg_hero_panel)
                     .into(imageHero);
@@ -149,6 +150,21 @@ public class PlaceDetailActivity extends AppCompatActivity {
                 startActivity(intent);
             });
         }
+    }
+
+    private Object resolveImageModel(ImageView target, String imageUrl) {
+        if (imageUrl != null && imageUrl.startsWith("drawable://")) {
+            String resourceName = imageUrl.substring("drawable://".length());
+            int resourceId = target.getResources().getIdentifier(
+                    resourceName,
+                    "drawable",
+                    target.getContext().getPackageName()
+            );
+            if (resourceId != 0) {
+                return resourceId;
+            }
+        }
+        return imageUrl;
     }
 
     private void refreshFavoriteButton() {

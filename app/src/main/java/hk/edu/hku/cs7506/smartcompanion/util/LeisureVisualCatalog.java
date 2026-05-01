@@ -6,7 +6,7 @@ import java.util.Map;
 
 public final class LeisureVisualCatalog {
     private static final String VISUALS_SOURCE = "Local drawable asset";
-    private static final String RESOURCE_PREFIX = "file:///android_res/drawable/";
+    private static final String RESOURCE_PREFIX = "drawable://";
     private static final Map<String, VisualEntry> NAME_MATCHES = createNameMatches();
     private static final Map<String, VisualEntry> VENUE_MATCHES = createVenueMatches();
 
@@ -44,27 +44,27 @@ public final class LeisureVisualCatalog {
 
     private static Map<String, VisualEntry> createNameMatches() {
         Map<String, VisualEntry> visuals = new LinkedHashMap<>();
-        visuals.put("hong kong museum of art", new VisualEntry(drawable("leisure_hk_museum_of_art.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong museum of history", new VisualEntry(drawable("leisure_hk_museum_of_history.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong science museum", new VisualEntry(drawable("leisure_hk_science_museum.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong space museum", new VisualEntry(drawable("leisure_hk_space_museum.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong heritage museum", new VisualEntry(drawable("leisure_hk_heritage_museum.jpg"), VISUALS_SOURCE));
-        visuals.put("flagstaff house museum of tea ware", new VisualEntry(drawable("leisure_flagstaff_house.jpg"), VISUALS_SOURCE));
-        visuals.put("dr sun yat-sen museum", new VisualEntry(drawable("leisure_dr_sun_yat_sen_museum.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong visual arts centre", new VisualEntry(drawable("leisure_hk_visual_arts_centre.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong film archive", new VisualEntry(drawable("leisure_hk_film_archive.jpg"), VISUALS_SOURCE));
-        visuals.put("tai kwun", new VisualEntry(drawable("leisure_tai_kwun.jpg"), VISUALS_SOURCE));
+        visuals.put("hong kong museum of art", new VisualEntry(drawable("leisure_hk_museum_of_art"), VISUALS_SOURCE));
+        visuals.put("hong kong museum of history", new VisualEntry(drawable("leisure_hk_museum_of_history"), VISUALS_SOURCE));
+        visuals.put("hong kong science museum", new VisualEntry(drawable("leisure_hk_science_museum"), VISUALS_SOURCE));
+        visuals.put("hong kong space museum", new VisualEntry(drawable("leisure_hk_space_museum"), VISUALS_SOURCE));
+        visuals.put("hong kong heritage museum", new VisualEntry(drawable("leisure_hk_heritage_museum"), VISUALS_SOURCE));
+        visuals.put("flagstaff house museum of tea ware", new VisualEntry(drawable("leisure_flagstaff_house"), VISUALS_SOURCE));
+        visuals.put("dr sun yat-sen museum", new VisualEntry(drawable("leisure_dr_sun_yat_sen_museum"), VISUALS_SOURCE));
+        visuals.put("hong kong visual arts centre", new VisualEntry(drawable("leisure_hk_visual_arts_centre"), VISUALS_SOURCE));
+        visuals.put("hong kong film archive", new VisualEntry(drawable("leisure_hk_film_archive"), VISUALS_SOURCE));
+        visuals.put("tai kwun", new VisualEntry(drawable("leisure_tai_kwun"), VISUALS_SOURCE));
         return visuals;
     }
 
     private static Map<String, VisualEntry> createVenueMatches() {
         Map<String, VisualEntry> visuals = new LinkedHashMap<>();
-        visuals.put("west kowloon cultural district", new VisualEntry(drawable("leisure_west_kowloon.jpg"), VISUALS_SOURCE));
-        visuals.put("central harbourfront", new VisualEntry(drawable("leisure_central_harbourfront.jpg"), VISUALS_SOURCE));
-        visuals.put("victoria harbour", new VisualEntry(drawable("leisure_victoria_harbour.jpg"), VISUALS_SOURCE));
-        visuals.put("hong kong convention and exhibition centre", new VisualEntry(drawable("leisure_hkcec.jpg"), VISUALS_SOURCE));
-        visuals.put("kai tak", new VisualEntry(drawable("leisure_kai_tak.jpg"), VISUALS_SOURCE));
-        visuals.put("harbour city", new VisualEntry(drawable("leisure_harbour_city.jpg"), VISUALS_SOURCE));
+        visuals.put("west kowloon cultural district", new VisualEntry(drawable("leisure_west_kowloon"), VISUALS_SOURCE));
+        visuals.put("central harbourfront", new VisualEntry(drawable("leisure_central_harbourfront"), VISUALS_SOURCE));
+        visuals.put("victoria harbour", new VisualEntry(drawable("leisure_victoria_harbour"), VISUALS_SOURCE));
+        visuals.put("hong kong convention and exhibition centre", new VisualEntry(drawable("leisure_hkcec"), VISUALS_SOURCE));
+        visuals.put("kai tak", new VisualEntry(drawable("leisure_kai_tak"), VISUALS_SOURCE));
+        visuals.put("harbour city", new VisualEntry(drawable("leisure_harbour_city"), VISUALS_SOURCE));
         return visuals;
     }
 

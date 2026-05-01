@@ -5,34 +5,34 @@ import java.util.Locale;
 import java.util.Map;
 
 public final class PlaceProfileCatalog {
-    private static final String RESOURCE_PREFIX = "file:///android_res/drawable/";
+    private static final String RESOURCE_PREFIX = "drawable://";
     private static final String QUEEN_MARY_HOSPITAL_HERO =
-            localImage("hospital_queen_mary.jpg");
+            localImage("hospital_queen_mary");
     private static final String QUEEN_ELIZABETH_HOSPITAL_HERO =
-            localImage("hospital_queen_elizabeth.jpg");
+            localImage("hospital_queen_elizabeth");
     private static final String PRINCE_OF_WALES_HOSPITAL_HERO =
-            localImage("hospital_prince_of_wales.jpg");
+            localImage("hospital_prince_of_wales");
     private static final String PAMELA_YOUDE_EASTERN_HOSPITAL_HERO =
-            localImage("hospital_pamela_youde_eastern.jpg");
+            localImage("hospital_pamela_youde_eastern");
     private static final String PRINCESS_MARGARET_HOSPITAL_HERO =
-            localImage("hospital_princess_margaret.jpg");
+            localImage("hospital_princess_margaret");
     private static final String NORTH_DISTRICT_HOSPITAL_HERO =
-            localImage("hospital_north_district.jpg");
+            localImage("hospital_north_district");
     private static final String TSEUNG_KWAN_O_HOSPITAL_HERO =
-            localImage("hospital_tseung_kwan_o.jpg");
+            localImage("hospital_tseung_kwan_o");
     private static final String TUEN_MUN_HOSPITAL_HERO =
-            localImage("hospital_tuen_mun.jpg");
+            localImage("hospital_tuen_mun");
     private static final String UNITED_CHRISTIAN_HOSPITAL_HERO =
-            localImage("hospital_united_christian.jpg");
+            localImage("hospital_united_christian");
     private static final String ST_JOHN_HOSPITAL_HERO =
-            localImage("hospital_st_john.jpg");
+            localImage("hospital_st_john");
 
     private static final String PARKING_HERO_CENTRAL =
-            localImage("parking_central.jpg");
+            localImage("parking_central");
     private static final String PARKING_HERO_KAI_TAK =
-            localImage("parking_kai_tak.jpg");
+            localImage("parking_kai_tak");
     private static final String PARKING_HERO_DISTRICT =
-            localImage("parking_district.jpg");
+            localImage("parking_district");
     private static final String WIKIMEDIA_ATTRIBUTION = "Local drawable asset";
 
     private static final Map<String, PlaceProfile> HOSPITAL_PROFILES = createHospitalProfiles();

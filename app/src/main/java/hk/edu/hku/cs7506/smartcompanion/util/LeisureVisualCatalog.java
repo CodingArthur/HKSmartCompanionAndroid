@@ -40,43 +40,43 @@ public final class LeisureVisualCatalog {
     private static Map<String, VisualEntry> createNameMatches() {
         Map<String, VisualEntry> visuals = new LinkedHashMap<>();
         visuals.put("hong kong museum of art", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/4/4e/Hong_Kong_Museum_of_Art_20250716.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hong%20Kong%20Museum%20of%20Art%20Facade.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong museum of history", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/1/1d/HK_Hong_Kong_Museum_of_History.JPG",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/HK_Hong_Kong_Museum_of_History.JPG",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong science museum", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/f/ff/HKScienceMuseumview.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/HKScienceMuseumview.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong space museum", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/2/26/Hong_Kong_Space_Museum.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hong_Kong_Space_Museum.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong heritage museum", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/5/5f/Hong_Kong_Heritage_Museum_201305.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hong_Kong_Heritage_Museum_201305.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("flagstaff house museum of tea ware", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flagstaff_House%2C_Museum_of_Tea_Ware.JPG",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Flagstaff_House,_Museum_of_Tea_Ware.JPG",
                 VISUALS_SOURCE
         ));
         visuals.put("dr sun yat-sen museum", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/0/03/Dr_Sun_Yat-sen_Museum.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Dr_Sun_Yat-sen_Museum.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong visual arts centre", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/9/9c/Hong_Kong_Visual_Arts_Center.JPG",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hong_Kong_Visual_Arts_Center.JPG",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong film archive", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/f/fd/Hong_Kong_Film_Archive01.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Hong_Kong_Film_Archive01.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("tai kwun", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/1/13/Tai_Kwun_Parade_Ground_201806.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Tai_Kwun_Parade_Ground_201806.jpg",
                 VISUALS_SOURCE
         ));
         return visuals;
@@ -85,27 +85,27 @@ public final class LeisureVisualCatalog {
     private static Map<String, VisualEntry> createVenueMatches() {
         Map<String, VisualEntry> visuals = new LinkedHashMap<>();
         visuals.put("west kowloon cultural district", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/e/ed/M%2B%2C_West_Kowloon_Cultural_District_%28Hong_Kong%29.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/M%2B,_West_Kowloon_Cultural_District_(Hong_Kong).jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("central harbourfront", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/f/f5/Central_Harbourfront_Event_Space%2C_Hong_Kong.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Central_Harbourfront_Event_Space,_Hong_Kong.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("victoria harbour", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/0/01/Victoria_Harbour_%28from_Lugard_Road%29.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Victoria_Harbour_(from_Lugard_Road).jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("hong kong convention and exhibition centre", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/4/4d/HKCEC.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/HKCEC.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("kai tak", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/6/66/Kai_Tak_Sports_Park_2025.jpg",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Kai_Tak_Area_2007.jpg",
                 VISUALS_SOURCE
         ));
         visuals.put("harbour city", new VisualEntry(
-                "https://upload.wikimedia.org/wikipedia/commons/e/e9/Harbour_City_Front.JPG",
+                "https://commons.wikimedia.org/wiki/Special:FilePath/Harbour_City_Front.JPG",
                 VISUALS_SOURCE
         ));
         return visuals;
